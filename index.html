@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | QR code component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      :root {
+        --fs-p: 12px;
+
+        --cl-white: hsl(0, 0%, 100%);
+        --cl-lg: hsl(212, 45%, 89%);
+        --cl-gb: hsl(220, 15%, 55%);
+        --cl-db: hsl(218, 44%, 22%);
+
+        --ff: "Outfit", sans-serif;
+      }
+      body {
+        font-family: var(--ff);
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+        padding-top: 80px;
+        background-color: var(--cl-lg);
+        height: 550px;
+      }
+
+      .wbody {
+        width: 20%;
+        background-color: var(--cl-white);
+        padding: 10px;
+        margin: auto;
+        border-radius: 10px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        font-size: var(--fs-p);
+        color: var(--cl-gb);
+      }
+      h4 {
+        font-weight: bolder;
+      }
+      @media (max-width: 600px) {
+        .container {
+          width: 50%;
+          margin: auto;
+          padding-top: 80px;
+          background-color: var(--cl-lg);
+          height: 500px;
+        }
+        .wbody {
+          width: 83%;
+          padding: 10px;
+          background-color: var(--cl-white);
+          margin: auto;
+          border-radius: 10px;
+          text-align: center;
+        }
+        img {
+          display: block;
+          max-width: 100%;
+          border-radius: 10px;
+        }
+        p {
+          font-size: var(--fs-p);
+          color: var(--cl-gb);
+        }
+        h4 {
+          font-weight: bolder;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="cover"> -->
+    <div class="container">
+      <div class="wbody">
+        <img src="images/image-qr-code.png" alt="" srcset="" />
+        <h4>Improve your front-end skills by building projects</h4>
+        <p>
+          Scan the QR code to visit frontend mentor and take your coding skills
+          to the next level.
+        </p>
+      </div>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
